@@ -1,0 +1,6 @@
+import React from 'react';
+import { InfosScreen } from '@heroes/shared';
+
+export default function Infos() {
+  return <InfosScreen next="/card" dot={0} />;
+}

@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Heroes Pro",
+    "slug": "heroes-pro",
+    "scheme": "heroespro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "swiss.heroes.pro",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "swiss.heroes.pro",
+      "adaptiveIcon": {
+        "backgroundColor": "#383495",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-image",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 260,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "$(PRODUCT_NAME) accède à vos photos pour votre photo de profil et vos documents.",
+          "cameraPermission": "$(PRODUCT_NAME) utilise l'appareil photo pour vos photos de profil et vos justificatifs.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "$(PRODUCT_NAME) utilise Face ID pour vous identifier."
+        }
+      ],
+      "expo-document-picker"
+    ],
+    "experiments": {}
+  }
+}

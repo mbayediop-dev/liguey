@@ -1,0 +1,28 @@
+export const colors = {
+  red: '#FE0F2E',
+  redSoft: '#FF8697',
+  redPale: '#FFC8D0',
+  redDeep: '#E8323C',
+  blue: '#383495',
+  blueSoft: '#9C9ACA',
+  bluePale: '#D7D6EA',
+  facebook: '#3B5999',
+  black: '#000000',
+  white: '#FFFFFF',
+  bg: '#F5F5F5',
+  field: '#F5F5F5',
+  border: '#E6E6E6',
+  grey: '#D8D8D8',
+  greyLabel: '#C4C4C4',
+  greyText: '#AAAAAA',
+  greyDark: '#6B6B6B',
+  bubbleGrey: '#EEEEEE',
+  green: '#4CBB5A',
+  orange: '#EDB022',
+  overlay: 'rgba(0,0,0,0.6)',
+  cardGrey: '#B8BFC5',
+  cardBlue: '#B1C6D7',
+  cardBeige: '#E3C392',
+} as const;
+
+export type ColorName = keyof typeof colors;

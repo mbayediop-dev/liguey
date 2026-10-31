@@ -1,0 +1,5 @@
+# Configuration minimale pour la CLI Supabase (`supabase link` / `supabase db push`).
+project_id = "heroes"
+
+[db]
+major_version = 17

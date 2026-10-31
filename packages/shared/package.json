@@ -1,0 +1,42 @@
+{
+  "name": "@heroes/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@expo-google-fonts/poppins": "*",
+    "@react-native-async-storage/async-storage": "*",
+    "@supabase/supabase-js": "*",
+    "@tanstack/react-query": "*",
+    "date-fns": "*",
+    "expo": "*",
+    "expo-auth-session": "*",
+    "expo-constants": "*",
+    "expo-crypto": "*",
+    "expo-document-picker": "*",
+    "expo-file-system": "*",
+    "expo-font": "*",
+    "expo-image": "*",
+    "expo-image-picker": "*",
+    "expo-linking": "*",
+    "expo-local-authentication": "*",
+    "expo-router": "*",
+    "expo-splash-screen": "*",
+    "expo-status-bar": "*",
+    "expo-store-review": "*",
+    "expo-system-ui": "*",
+    "expo-web-browser": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-screens": "*",
+    "react-native-svg": "*",
+    "react-native-url-polyfill": "*",
+    "zustand": "*",
+    "@expo/vector-icons": "*"
+  }
+}

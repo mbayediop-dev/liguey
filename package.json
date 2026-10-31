@@ -1,0 +1,23 @@
+{
+  "name": "heroes",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "pro",
+    "user",
+    "admin"
+  ],
+  "scripts": {
+    "pro": "npm run start --workspace=@heroes/pro",
+    "user": "npm run start --workspace=@heroes/user",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "admin": "npm run dev --workspace=@heroes/admin",
+    "admin:build": "npm run build --workspace=@heroes/admin",
+    "admin:demo": "npm run demo --workspace=@heroes/admin"
+  },
+  "overrides": {
+    "react": "19.3.0"
+  }
+}
